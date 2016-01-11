@@ -5,7 +5,7 @@ import java.util.*;
 public class ProjectSetup {
 
 	public static void main (String[] args){
-
+		
 		  System.out.println("What is the total cost of the computer? ");
 		  Scanner reader = new Scanner(System.in);
 		  double totalcost = reader.nextInt();
@@ -15,11 +15,22 @@ public class ProjectSetup {
 		  Scanner type = new Scanner(System.in);
 		  String computertype = type.nextLine();
 		  System.out.println("your computer is a " + computertype);
+		  if (computertype == "desktop") {
+			  totalcost = totalcost + 400;
+		  if (computertype == "laptop") {
+			  totalcost = totalcost + 1500;
+			  
+		  }
+		  }
 		  
 		  System.out.println("Enter screen size: ");
 		  Scanner screen = new Scanner(System.in);
 		  double screensize = screen.nextInt();
 		  System.out.println("the screen size is " + screensize);
+		  if (screensize == 15) {
+			  totalcost = totalcost +15;	  
+		  }		  
+		  
 		  
 		  System.out.println("Enter speed of CPU: ");
 		  Scanner speed = new Scanner(System.in);
@@ -67,4 +78,5 @@ public class ProjectSetup {
 		  System.out.println("hours" + hours);
 		  
 				}
-	}
+
+}
