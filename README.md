@@ -28,9 +28,30 @@ public class ProjectSetup {
 		  double screensize = screen.nextInt();
 		  System.out.println("the screen size is " + screensize);
 		  if (screensize == 15) {
-			  totalcost = totalcost +15;	  
+			  totalcost = totalcost + 15;
+		  if (screensize == 17) {
+			  totalcost = totalcost + 18;
+		  if (screensize == 19) {
+			  totalcost = totalcost + 20;
+		  if (screensize == 20) {
+			  totalcost = totalcost + 24;
+		  if (screensize == 21) {
+			  totalcost = totalcost + 26;
+		  if (screensize == 22) {
+			  totalcost = totalcost + 30;
+		  if (screensize == 24) {
+			  totalcost = totalcost + 40;
+		  if (screensize == 30) {
+			  totalcost = totalcost + 50;
+			  
+		  }
+		  }
+		  }
+		  }
+		  }
+		  }
+		  }
 		  }		  
-		  
 		  
 		  System.out.println("Enter speed of CPU: ");
 		  Scanner speed = new Scanner(System.in);
